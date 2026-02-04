@@ -41,12 +41,90 @@
             <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
           </ul>
         </address>
+        <button class="menu-open-btn" type="button">
+          <svg class="menu-open-icon" width="24" height="24">
+            <use href="./images/icons.svg#open"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu">
+        <div>
+          <button class="menu-close-btn" type="button">
+            <svg class="menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#close"></use>
+            </svg>
+          </button>
+          <nav class="mob-nav">
+            <ul class="mob-menu-list">
+              <li class="mob-menu-item">
+                <a href="" class="mob-menu-link mob-menu-studio">Studio</a>
+              </li>
+              <li class="mob-menu-item">
+                <a href="" class="mob-menu-link">Portfolio</a>
+              </li>
+              <li class="mob-menu-item">
+                <a href="" class="mob-menu-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="mob-menu-bottom">
+          <address class="mob-menu-contacts">
+            <ul class="mob-menu-contacts-list">
+               </li>
+              <li>
+                <a
+                  class="mob-menu-contacts-link mob-menu-tel"
+                  href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-menu-contacts-item">
+                <a
+                  class="mob-menu-contacts-link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+             
+            </ul>
+            <ul class="mob-menu-icon-list">
+              <li class="mob-menu-icon-item">
+                <a class="mob-menu-icon-link" href="#" aria-label="Instagram">
+                  <svg class="mob-menu-icon" width="24" height="24">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-menu-icon-item">
+                <a class="mob-menu-icon-link" href="#" aria-label="Twitter">
+                  <svg class="mob-menu-icon" width="24" height="24">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-menu-icon-item">
+                <a class="mob-menu-icon-link" href="#" aria-label="Facebook">
+                  <svg class="mob-menu-icon" width="24" height="24">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-menu-icon-item">
+                <a class="mob-menu-icon-link" href="#" aria-label="Linkedin">
+                  <svg class="mob-menu-icon" width="24" height="24">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </header>
 
     <main>
       <section class="page-title section">
-        <div class="container">
+        <div class="container main-page">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
           <button class="btn" type="button">Order Service</button>
         </div>
@@ -56,8 +134,8 @@
         <div class="container">
           <h2 class="features-title visually-hidden">Our Features</h2>
 
-          <ul>
-            <li>
+          <ul class="features-list">
+            <li class="features-item">
               <div class="icon-box">
                 <svg class="icon-features" width="64" height="64">
                   <use href="./images/icons.svg#icon1"></use>
@@ -71,7 +149,7 @@
               </p>
             </li>
 
-            <li>
+            <li class="features-item">
               <div class="icon-box">
                 <svg class="icon-features" width="64" height="64">
                   <use href="./images/icons.svg#icon2"></use>
@@ -85,7 +163,7 @@
               </p>
             </li>
 
-            <li>
+            <li class="features-item">
               <div class="icon-box">
                 <svg class="icon-features" width="64" height="64">
                   <use href="./images/icons.svg#icon3"></use>
@@ -99,7 +177,7 @@
               </p>
             </li>
 
-            <li>
+            <li class="features-item">
               <div class="icon-box">
                 <svg class="icon-features" width="64" height="64">
                   <use href="./images/icons.svg#icon4"></use>
@@ -119,9 +197,13 @@
       <section class="team section">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
-          <ul>
+          <ul class="team-list">
             <li class="team-card">
               <img
+                srcset="
+                  ./images/Team-Card-1.jpg    1x,
+                  ./images/Team-Card-1@x2.jpg 2x
+                "
                 src="./images/Team-Card-1.jpg"
                 alt="Product Designer"
                 width="264"
@@ -167,6 +249,10 @@
 
             <li class="team-card">
               <img
+                srcset="
+                  ./images/Team-Card-2.jpg    1x,
+                  ./images/Team-Card-2@x2.jpg 2x
+                "
                 src="./images/Team-Card-2.jpg"
                 alt="Frontend Developer"
                 width="264"
@@ -212,6 +298,10 @@
 
             <li class="team-card">
               <img
+                srcset="
+                  ./images/Team-Card-3.jpg    1x,
+                  ./images/Team-Card-3@x2.jpg 2x
+                "
                 src="./images/Team-Card-3.jpg"
                 alt="Marketing"
                 width="264"
@@ -255,6 +345,10 @@
 
             <li class="team-card">
               <img
+                srcset="
+                  ./images/Team-Card-4.jpg    1x,
+                  ./images/Team-Card-4@x2.jpg 2x
+                "
                 src="./images/Team-Card-4.jpg"
                 alt="UI designer"
                 width="264"
@@ -307,10 +401,12 @@
             <li class="portfolio-list">
               <div class="box-overlay">
                 <img
+                  srcset="
+                    ./images/portfolio-card1.jpg    1x,
+                    ./images/portfolio-card1@2x.jpg 2x
+                  "
                   src="./images/portfolio-card1.jpg"
                   alt="Banking App"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -326,10 +422,12 @@
             <li class="portfolio-list">
               <div class="box-overlay">
                 <img
+                  srcset="
+                    ./images/portfolio-card2.jpg    1x,
+                    ./images/portfolio-card2@2x.jpg 2x
+                  "
                   src="./images/portfolio-card2.jpg"
                   alt="Cashless Payment"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -345,10 +443,12 @@
             <li class="portfolio-list">
               <div class="box-overlay">
                 <img
+                  srcset="
+                    ./images/portfolio-card3.jpg    1x,
+                    ./images/portfolio-card3@2x.jpg 2x
+                  "
                   src="./images/portfolio-card3.jpg"
                   alt="Meditation App"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -364,10 +464,12 @@
             <li class="portfolio-list">
               <div class="box-overlay">
                 <img
+                  srcset="
+                    ./images/portfolio-card4.jpg    1x,
+                    ./images/portfolio-card4@2x.jpg 2x
+                  "
                   src="./images/portfolio-card4.jpg"
                   alt="Taxi Service"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -383,10 +485,12 @@
             <li class="portfolio-list">
               <div class="box-overlay">
                 <img
+                  srcset="
+                    ./images/portfolio-card5.jpg    1x,
+                    ./images/portfolio-card5@2x.jpg 2x
+                  "
                   src="./images/portfolio-card5.jpg"
                   alt="Screen Illustrations"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -402,10 +506,12 @@
             <li class="portfolio-list">
               <div class="box-overlay">
                 <img
+                  srcset="
+                    ./images/portfolio-card6.jpg    1x,
+                    ./images/portfolio-card6@2x.jpg 2x
+                  "
                   src="./images/portfolio-card6.jpg"
                   alt="Online Courses"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -568,11 +674,13 @@
                   <use href="./images/icons.svg#check"></use>
                 </svg>
               </span>
+              <span class="policy-text-wrap">
+                <span class="policy-span-text">
+                  I accept the terms and conditions of the
+                </span>
 
-              <span class="policy-span-text">
-                I accept the terms and conditions of the
+                <a class="policy-link" href="#">Privacy Policy</a>
               </span>
-              <a class="policy-link" href="#"> Privacy Policy</a>
             </label>
           </div>
           <button class="modal-send-btn" type="submit">Send</button>
